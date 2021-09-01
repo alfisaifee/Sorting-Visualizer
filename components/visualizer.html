@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div><p>SORTING VISUALIZER</p></div>
+</nav>
+<div class="row">
+  <div id="visual-container" class="col-visual">
+  </div>
+  <div class="col-setting">
+    <button class="btn" onclick="handleNewArray()">
+      New Array
+    </button>
+    <div class="size-input-container">
+      <label for="size_input" min="0" max ="50">Size</label>
+      <input id="size_input" value="25" type="number"></input>
+    </div>
+    <div class="dropdown">
+      <label for="dropdown-content">Select a sorting algorithm</label>
+      <div class="dropdown-content">
+        <select>
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="merge">Merge Sort</option>
+        </select>
+      </div>
+    </div>
+    <div class="slide-container"><label>Speed</label><input id="speed_input" type="range" min="0.1" max="2"></input></div>
+    <button class="btn" onClick="handleSort()">Sort</button>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div><p>SORTING VISUALIZER</p></div>
+    </nav>
+    <div class="row">
+      <div id="visual-container" class="col-visual">
+      </div>
+      <div class="col-setting">
+        <button id="new_array_button" class="btn">
+          New Array
+        </button>
+        <div class="size-input-container">
+          <label  class="slider-label" for="size_input">Size</label>
+          <input id="size_input" class="slider" value="25" type="range" min="1" max="50"></input>
+        </div>
+        <div class="slide-container">
+          <label class="slider-label" for="speed_input">Speed</label>
+          <input id="speed_input" class="slider" value="60" type="range" min="20" max="350" ></input>
+        </div>
+        <div class="dropdown">
+          <label for="dropdown-content">Select a sorting algorithm</label>
+          <div class="dropdown-content">
+            <select id="sort-select">
+              <option value="bubble">Bubble Sort</option>
+              <option value="selection">Selection Sort</option>
+              <option value="insertion">Insertion Sort</option>
+              <option value="merge">Merge Sort</option>
+              <option value="quick">Quick Sort</option>
+            </select>
+          </div>
+        </div>
+        <button id="sort_button" class="btn">Sort</button>
+        <button id="stop_button" class="btn">Stop</button> 
+      </div>
+    </div>
+  </body>
+  <script src="script.js" async defer></script>
+  <script src="bubbleSort.js" async defer></script>
+  <script src="insertionSort.js" async defer></script>
+  <script src="selectionSort.js" async defer></script>
+  <script src="mergeSort.js" async defer></script>
+  <script src="quickSort.js" async defer></script>
+</html>
